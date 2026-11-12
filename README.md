@@ -4,6 +4,10 @@
 
 电脑端不自己造协议，直接复用开源插件 [`@linxin666/dsh-remote-bridge`](https://www.npmjs.com/package/@linxin666/dsh-remote-bridge)（Apache-2.0）。手机端是按该插件 **protocol v1** 写的原生 Kotlin / Jetpack Compose 客户端。
 
+<p align="center">
+  <img src="docs/screenshots/emulator-e2e.png" width="320" alt="Android 客户端在模拟器中的会话界面">
+</p>
+
 ## 特性
 
 - 扫码或手动填邀请码配对，设备身份为 P-256 密钥对
@@ -134,7 +138,7 @@ Release 构建目前用 debug 签名，适合侧载；上架应用商店前请�
 
 ## 验证状态
 
-见 [`docs/VERIFICATION.md`](docs/VERIFICATION.md)。那里分别列出「协议链路」「桌面桥」「Android 构建」「手机端端到端」的已验证与未验证项，不把单元测试或配对码生成当成端到端通过。
+模拟器端到端已通过邀请码配对、会话同步、发言/回复、中断和新建会话；真实手机、相机扫码、审批/提问真实事件仍未验证。详见 [`docs/VERIFICATION.md`](docs/VERIFICATION.md)，那里按项列出已验证与未验证内容，不把单元测试或配对码生成当成端到端通过。
 
 ## 许可
 
